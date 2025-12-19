@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Facebook_contact_number_search_Page.Css">
+        <title>যেকোনো কারোর facebook URL দিয়ে ওই লোকের কন্টাক নাম্বার বের করে নেন</title>
+    </head>
+    <body>
+        <h1>যেকোনো কারোর facebook URL দিয়ে ওই লোকের কন্টাক নাম্বার বের করে নেন</h1>
+        <p>এই পেজে আপনি যেকোনো কারোর Facebook URL দিয়ে তার কন্টাক নাম্বার বের করতে পারবেন। নিচের ফর্মে Facebook প্রোফাইলে URL দিন এবং সাবমিট করুন।</p>
+        <form action="" method="post">
+            <label for="fburl">Facebook Profile URL:</label><br>
+            <input type="text" id="fburl" name="fburl" placeholder="Enter Facebook Profile URL"><br><br>
+            <input type="submit" value="Get Contact Number">
+        </form>
+        <p id="result"></p>
+
+        <script>
+            // JavaScript code to handle form submission and display result
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const fburl = document.getElementById('fburl').value;
+                // Placeholder for actual contact number retrieval logic
+                const contactNumber = "Contact number for " + fburl + " is:"; // Dummy data
+                document.getElementById('result').innerText = contactNumber;
+            });
+        </script>
+    </body>
+</html>
